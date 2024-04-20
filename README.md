@@ -10,7 +10,7 @@
  - Toda iteração com banco de dados é tratada diretamente pelo DAO.<br>
  - Os dados de configuração(Servidor, Database, Usuario, Senha) da integração do java com o banco de dados estão no arquivo src/dao/DadosBanco.java.<br>
  - Dependência do Driver JDBC foi especificada no arquivo pom.xml.<br>
- - O Driver de conexão com o MySQL e espeficado na classe Conexao.java.<br>
+ - O Driver de conexão com o MySQL e espeficado na classe src/dao/Conexao.java.<br>
  - Crie o banco de dados antes de executar o programa, as especificações da tabela estão no arquivo banco.sql.<br>
  - A pasta src contêm os fontes do projeto.<br>
  - A interface gráfica foi construída **com** o auxílio da IDE NetBeans.<br>
@@ -26,6 +26,7 @@
 
 Desenvolva um sistema desktop em Java para cadastrar pessoas em um banco de dados. As informações que cada pessoa deve preencher são as seguintes: Nome, Idade, Data Nascimento, Cidade e Estado Civil. Para o campo estado civil deve ser usado um botão de radio para as opções casado, solteiro e viúvo.  A tabela e o banco de dados têm o nome “pessoa”. A tabela tem a seguinte estrutura:
 
+```
 CREATE TABLE Pessoa (
 	pessoaID        INTEGER NOT NULL AUTO_INCREMENT,    	 
 	nome            VARCHAR(50) NOT NULL,     
@@ -35,6 +36,7 @@ CREATE TABLE Pessoa (
 	estadoCivil     VARCHAR(20),	
 	PRIMARY KEY(pessoaID)    
 );
+```
 
 O layout do formulário é apresentado abaixo:
 
